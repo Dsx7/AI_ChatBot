@@ -65,10 +65,12 @@ export const Header: React.FC<HeaderProps> = ({
           </button>
 
           <div className="flex items-center gap-2.5">
-            <div className="w-9 h-9 rounded-xl bg-gradient-to-tr from-cyan-500 via-indigo-500 to-violet-600 p-0.5 shadow-lg shadow-cyan-500/20">
-              <div className="w-full h-full bg-slate-950 rounded-[10px] flex items-center justify-center">
-                <Sparkles className="w-5 h-5 text-cyan-400" />
-              </div>
+            <div className="w-9 h-9 rounded-xl bg-gradient-to-tr from-cyan-500 via-indigo-500 to-violet-600 p-0.5 shadow-lg shadow-cyan-500/20 overflow-hidden">
+              <img
+                src="/logo.webp"
+                alt="NexusAI Logo"
+                className="w-full h-full object-cover rounded-[9px]"
+              />
             </div>
             <div>
               <div className="flex items-center gap-1.5">

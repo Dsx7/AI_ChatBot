@@ -16,7 +16,12 @@ export const metadata: Metadata = {
   title: "NexusAI - Smart Free-Minded AI Expert ChatBot",
   description: "A friendly, intelligent, and confident AI expert for programming, debugging, web development, system design, and startup ideas.",
   keywords: ["AI Chatbot", "Tech AI Expert", "Groq AI", "Programming Assistant", "System Design", "Web Development"],
-  authors: [{ name: "NexusAI Team" }],
+  authors: [{ name: "Al Helal Mohammod Bayazid", url: "https://github.com/Dsx7/" }],
+  icons: {
+    icon: "/logo.webp",
+    shortcut: "/logo.webp",
+    apple: "/logo.webp",
+  },
 };
 
 export default function RootLayout({
@@ -26,6 +31,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className={`${geistSans.variable} ${geistMono.variable} h-full antialiased dark`}>
+      <head>
+        <link rel="icon" href="/logo.webp" type="image/webp" />
+      </head>
       <body className="min-h-screen bg-[#070b14] text-slate-100 flex flex-col font-sans selection:bg-cyan-500/30 selection:text-cyan-200">
         {children}
       </body>

@@ -8,6 +8,7 @@ import { ChatMessage } from '@/components/ChatMessage';
 import { ChatInput } from '@/components/ChatInput';
 import { SettingsModal } from '@/components/SettingsModal';
 import { NameOnboardingCard } from '@/components/NameOnboardingCard';
+import { Footer } from '@/components/Footer';
 import { Sparkles, Bot, Trash2 } from 'lucide-react';
 
 const DEFAULT_SETTINGS: AppSettings = {
@@ -445,6 +446,9 @@ export default function Home() {
           hasMessages={activeSession ? activeSession.messages.length > 2 : false}
           userName={settings.userName}
         />
+
+        {/* Footer */}
+        <Footer />
       </div>
 
       {/* Configuration Settings Modal */}
